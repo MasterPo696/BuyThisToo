@@ -1,22 +1,16 @@
-import requests
 import logging
-from config import AI21_API_KEY
-
-
-
-import logging
-# from ai21 import AI21Client
-from config import AI21_API_KEY
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ai21.chat_models import ChatAI21
+
+from config import settings
 
 class LLMServiceAI21:
     def __init__(self):
         """Инициализация AI21 модели."""
         try:
             self.parser = StrOutputParser()
-            self.model = ChatAI21(model="jamba-instruct", api_key=AI21_API_KEY, streaming=True)
+            self.model = ChatAI21(model="jamba-instruct", api_key=settings.AI21_API_KEY, streaming=True)
         except Exception as e:
             logging.error(f"Ошибка инициализации AI21: {e}")
             self.model = None

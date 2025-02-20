@@ -2,3 +2,4 @@
 __pycache__/
 mvenv/
 database.db
+.DS_Store

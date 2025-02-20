@@ -16,5 +16,5 @@ class Colors:
     LIGHT_BLUE = (173, 216, 230)  # Светло-голубой
     LIGHT_GREEN = (144, 238, 144)  # Светло-зеленый
 
-FONT_PATH = "/Users/masterpo/Desktop/BuyThisToo/data/fonts/ofont.ru_Arial.ttf"
+FONT_PATH = "/BuyThisToo/data/fonts/ofont.ru_Arial.ttf"
 

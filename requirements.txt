@@ -1,0 +1,14 @@
+pandas
+scipy
+sklearn
+nltk
+numpy
+dotenv
+langchain
+langchain_core
+langchain_ai21
+langchain_openai
+langchain_anthropic
+PIL
+requests
+logging
